@@ -211,3 +211,7 @@ input:hover{
     filter: drop-shadow(0 0 15px aliceblue) ;
     scale: 1.1;
 }
+@font-face {
+    font-family: 'Unbounded';
+    src: url(/assets/fonts/Unbounded-VariableFont_wght.ttf);
+}
