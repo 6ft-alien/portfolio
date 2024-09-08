@@ -1,0 +1,94 @@
+* {
+    margin:0;
+    color: white;
+    font-family: 'Unbounded';
+} 
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(/assets/pexels-codioful-6985132.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: auto;
+    height: 100vh;
+}
+body::selection{
+    background-color: transparent;
+    color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    gap: 15vh;
+    background-color: rgba(240, 248, 255, 0.199);
+    height: 10vh;
+    top:0;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+nav a {
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+nav a:hover{
+    text-shadow: 0 0 15px aliceblue;
+    scale: 1.1;
+}
+#About, #Qualifications, #Experience, #Skills, #Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: rgba(240, 248, 255, 0.199);
+    
+    padding: 7vh;
+    border: 0.5vh solid rgba(255, 255, 255, 0.562);
+    border-radius: 8vh;
+    gap: 10vh;
+}
+.about img{
+    width: 35vh;
+    border-radius: 100%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about img:hover{
+    scale: 1.05;
+    border-radius: 100%;
+    box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+    transform: rotateX(45 deg);
+}
+.about h1{
+    margin-bottom: 3vh;
+    font-size: 6vh;
+    padding-bottom: 2vh;
+    border-bottom: 0.3vh solid rgba(255, 255, 255, 0.562);
+}
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 0.5vh;
+    border: none;
+    border-radius: 1.5vh;
+    background-color:  rgba(240, 248, 255, 0.404);;
+}
+#Qualifications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
