@@ -48,18 +48,21 @@ nav a:hover{
     width: 100%;
     height: 100vh;
 }
-
 .about{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70%;
     background-color: rgba(240, 248, 255, 0.199);
-    
     padding: 7vh;
     border: 0.5vh solid rgba(255, 255, 255, 0.562);
     border-radius: 8vh;
     gap: 10vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about:hover{
+    box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+    scale: 1.02;
 }
 .about img{
     width: 35vh;
@@ -67,10 +70,9 @@ nav a:hover{
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .about img:hover{
-    scale: 1.05;
-    border-radius: 100%;
+    scale: 1.15;
+    transform: rotate(-10deg);
     box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
-    transform: rotateX(45 deg);
 }
 .about h1{
     margin-bottom: 3vh;
@@ -93,4 +95,50 @@ hr{
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+#Educational, #Professional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 46%;
+    font-size: 1.8vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#Educational:hover{
+    scale: 1.02;
+}
+#Educational h1{
+    margin-bottom: 3vh;
+    font-size: 4vh;
+}
+#educationaltable, #professionaltable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.199);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-collapse: collapse;
+}
+#educationaltable:hover{
+    box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+    scale: 1.02;
+}
+td,th,tr {
+    font-weight: 400;
+    padding: 3vh 1vh;
+    border: 0.5vh solid rgba(255, 255, 255, 0.562);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+td {
+    font-weight: 300;
+    text-align: left;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+td li {
+    margin-left: -3vh;
+}
+th:hover,td:hover {
+    background-color: rgba(240, 248, 255, 0.171);
 }
