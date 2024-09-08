@@ -95,6 +95,7 @@ hr{
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap: 5vh;
 }
 #Educational, #Professional {
     display: flex;
@@ -105,10 +106,10 @@ hr{
     font-size: 1.8vh;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-#Educational:hover{
+#Educational:hover, #Professional:hover{
     scale: 1.02;
 }
-#Educational h1{
+#Educational h1, #Professional h1{
     margin-bottom: 3vh;
     font-size: 4vh;
 }
@@ -121,15 +122,18 @@ hr{
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     border-collapse: collapse;
 }
-#educationaltable:hover{
+#educationaltable:hover, #professionaltable:hover{
     box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
     scale: 1.02;
 }
 td,th,tr {
     font-weight: 400;
-    padding: 3vh 1vh;
+    padding: 3vh 3vh;
     border: 0.5vh solid rgba(255, 255, 255, 0.562);
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+th{
+    font-size: 2vh;
 }
 td {
     font-weight: 300;
