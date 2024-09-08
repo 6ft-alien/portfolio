@@ -90,14 +90,10 @@ hr{
     border-radius: 1.5vh;
     background-color:  rgba(240, 248, 255, 0.404);;
 }
-#Qualifications{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+#Qualifications, #Skills{
     gap: 5vh;
 }
-#Educational, #Professional {
+#Educational, #Professional, #Softskills, #Hardskills, #Interests{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,14 +102,14 @@ hr{
     font-size: 1.8vh;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-#Educational:hover, #Professional:hover{
+#Educational:hover, #Professional:hover, #Softskills:hover, #Hardskills:hover, #Interests:hover{
     scale: 1.02;
 }
-#Educational h1, #Professional h1{
+#Educational h1, #Professional h1, #Softskills h1, #Hardskills h1, #cont h1, #Experience, #Interests h1{
     margin-bottom: 3vh;
     font-size: 4vh;
 }
-#educationaltable, #professionaltable {
+#educationaltable, #professionaltable, #softtable, #hardtable, #hobbytable {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,7 +118,7 @@ hr{
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     border-collapse: collapse;
 }
-#educationaltable:hover, #professionaltable:hover{
+#educationaltable:hover, #professionaltable:hover, #softtable:hover, #hardtable:hover, #hobbytable:hover{
     box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
     scale: 1.02;
 }
@@ -145,4 +141,73 @@ td li {
 }
 th:hover,td:hover {
     background-color: rgba(240, 248, 255, 0.171);
+}
+#cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+#cont h1{
+    font-size: 6vh;
+}
+#contform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    width: 60vh;
+    padding: 2vh;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    background-color: rgba(240, 248, 255, 0.199);
+    border: 0.3vh solid rgba(255, 255, 255, 0.562);
+    border-collapse: collapse;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+input:hover{
+    background-color: rgba(240, 248, 255, 0.39);
+}
+::placeholder{
+    color:  rgba(255, 255, 255, 0.562);
+}
+#contform button {
+    width: 18vh;
+    padding: 2vh;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    background-color: rgba(240, 248, 255, 0.199);
+    border: 0.5vh solid #cc0d43b4;
+    border-collapse: collapse;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-top: 3vh;
+}
+#contform button:hover {
+    box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
+    scale: 1.1;
+}
+#socials {
+    position: relative  ;
+    bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#socials #icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+}
+#socials #icons svg{
+    text-decoration: none;
+    width:6vh;
+    height: 6vh;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#socials #icons svg:hover{
+    filter: drop-shadow(0 0 15px aliceblue) ;
+    scale: 1.1;
 }
