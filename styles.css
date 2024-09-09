@@ -95,6 +95,7 @@ hr{
 }
 #Skills table{
     max-width: 40vh;
+    height: 50vh;
 }
 #Educational, #Professional, #Softskills, #Hardskills, #Interests{
     display: flex;
@@ -113,13 +114,12 @@ hr{
     font-size: 4vh;
 }
 table {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.199);
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     border-collapse: collapse;
+}
+#educationaltable, #professionaltable{
+    height: 55vh;
 }
 table:hover{
     box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
@@ -127,6 +127,7 @@ table:hover{
 td,th,tr {
     font-weight: 400;
     padding: 3vh 3vh;
+    background-color: rgba(240, 248, 255, 0.062);
     border: 0.5vh solid rgba(255, 255, 255, 0.562);
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -142,7 +143,7 @@ td li {
     margin-left: -3vh;
 }
 th:hover,td:hover {
-    background-color: rgba(240, 248, 255, 0.171);
+    background-color: rgba(240, 248, 255, 0.295);
 }
 #cont {
     display: flex;
@@ -168,7 +169,14 @@ input{
     background-color: rgba(240, 248, 255, 0.199);
     border: 0.3vh solid rgba(255, 255, 255, 0.562);
     border-collapse: collapse;
+    outline: none;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 input:hover{
     background-color: rgba(240, 248, 255, 0.39);
