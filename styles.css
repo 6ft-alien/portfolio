@@ -71,7 +71,6 @@ nav a:hover{
 }
 .about img:hover{
     scale: 1.15;
-    transform: rotate(-10deg);
     box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
 }
 .about h1{
@@ -102,14 +101,14 @@ hr{
     font-size: 1.8vh;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-#Educational:hover, #Professional:hover, #Softskills:hover, #Hardskills:hover, #Interests:hover{
+#Educational h1, #Professional h1, #Softskills h1, #Hardskills h1, #Interests h1{
     scale: 1.02;
 }
 #Educational h1, #Professional h1, #Softskills h1, #Hardskills h1, #cont h1, #Experience, #Interests h1{
     margin-bottom: 3vh;
     font-size: 4vh;
 }
-#educationaltable, #professionaltable, #softtable, #hardtable, #hobbytable {
+table {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,9 +117,8 @@ hr{
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     border-collapse: collapse;
 }
-#educationaltable:hover, #professionaltable:hover, #softtable:hover, #hardtable:hover, #hobbytable:hover{
+table:hover{
     box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
-    scale: 1.02;
 }
 td,th,tr {
     font-weight: 400;
