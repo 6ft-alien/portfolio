@@ -161,7 +161,7 @@ th:hover,td:hover {
     justify-content: center;
     flex-direction: column;
 }
-input{
+input, textarea{
     width: 60vh;
     padding: 2vh;
     border-radius: 1vh;
@@ -178,14 +178,20 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
-input:hover{
+input:hover, textarea:hover{
     background-color: rgba(240, 248, 255, 0.39);
 }
 ::placeholder{
     color:  rgba(255, 255, 255, 0.562);
 }
+textarea{
+    min-height: 10vh;
+    max-width: 60vh;
+    min-width: 60vh;
+}
 #contform button {
     width: 18vh;
+    font-size: 2vh;
     padding: 2vh;
     border-radius: 1vh;
     margin-bottom: 1vh;
@@ -194,6 +200,7 @@ input:hover{
     border-collapse: collapse;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     margin-top: 3vh;
+    cursor: pointer;
 }
 #contform button:hover {
     box-shadow: 0 0 15vh rgba(240, 248, 255, 0.281);
